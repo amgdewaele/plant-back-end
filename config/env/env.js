@@ -3,7 +3,7 @@ var env = {
 	dbPath: process.env.MONGO_PATH || 'localhost',
 	dbUser: process.env.MONGO_USER || '',
 	dbPassword: process.env.MONGO_PASS || '',
-	dbDatabase: process.env.MONGO_DB || 'api_stage'
+	dbDatabase: process.env.MONGO_DB || 'plants'
 };
 
 var dburl = process.env.NODE_ENV === 'production' ?
