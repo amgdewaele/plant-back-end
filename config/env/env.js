@@ -6,7 +6,7 @@ var env = {
 	dbDatabase: process.env.MONGO_DB || 'api_stage'
 };
 
-var dburl = process.env.NODE_ENV === 'development' ?
+var dburl = process.env.NODE_ENV === 'production' ?
 	'mongodb://' + env.dbUser + ';' + env.dbPassword + env.dbHost + env.dbDatabase  :
 	'mongodb://localhost/' + env.dbDatabase;
 
